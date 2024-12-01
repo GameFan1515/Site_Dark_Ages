@@ -1,0 +1,117 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    background-color: #790c0c;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+/* Estilização do corpo */
+
+/* Slider container */
+/* Centralizar o slider e ajustar o tamanho */
+.slider {
+    width: 80%; /* Ajuste o tamanho do slider em relação à largura da tela */
+    max-width: 500px; /* Limite máximo para o slider */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    overflow: hidden;
+    border-radius: 20px; /* Ajuste o arredondamento dos cantos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Slides */
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 10s infinite;
+}
+
+/* Cada slide */
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Animação para alternar slides */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Seção de informações do jogo */
+.game-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.game-info img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* Seção de download */
+.download {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.download .btn-download {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download .btn-download:hover {
+    background-color: #45a049;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
